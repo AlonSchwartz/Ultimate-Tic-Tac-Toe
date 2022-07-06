@@ -1,0 +1,108 @@
+h1 {
+  text-align: center;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+}
+
+table {
+  margin: 5px auto;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+.inactive:hover {
+  cursor: auto;
+}
+
+.takenByX {
+  background: rgb(79, 77, 223) !important;
+  cursor: auto;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.takenByX:hover {
+  background: rgb(79, 77, 223) !important;
+}
+
+.takenByO {
+  background: rgb(236, 29, 29) !important;
+  cursor: auto;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.takenByO:hover {
+  background: rgb(236, 29, 29) !important;
+}
+
+.activeCell {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.activeCell:hover {
+  background: rgb(79, 77, 223)
+}
+
+.activeCell.oTurn:hover {
+  background: rgb(236, 29, 29);
+}
+
+.miniGame {
+  border-collapse: collapse;
+}
+
+/* remove borders from top and bottom rows: */
+tr:first-child td {
+  border-top: none
+}
+
+tr:last-child td {
+  border-bottom: none
+}
+
+/* remove borders from first and last columns: */
+td:first-child {
+  border-left: none
+}
+
+td:last-child {
+  border-right: none
+}
+
+/*If this board is inactive, indicate it with cursor*/
+.inactiveBoard td {
+  background: grey;
+  cursor: not-allowed !important;
+}
+
+.inactiveBoard .oTurn {
+  background: grey;
+}
+
+.xWinner {
+  font-size: 2rem;
+  background-color: rgb(79, 77, 223);
+  color: white;
+  display: flow-root;
+
+}
+
+.oWinner {
+  font-size: 2rem;
+  background-color: rgb(236, 29, 29);
+  color: white;
+  display: flow-root;
+}

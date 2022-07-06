@@ -1,0 +1,26 @@
+<table class="miniGame" [ngClass]="{inactiveBoard: !this.board.playable}" *ngIf="!board.isThereAWinner">
+    <tr>
+        <td class="activeCell" *ngFor='let cell of board.grid | slice:0:3; let i=index' (click)='markCell(cell.id)'
+            [ngClass]="{inactive: !cell.isActive, takenByX: cell.value == 'X', takenByO: cell.value == 'O', oTurn: !xTurn }">
+            {{ cell.value }}
+        </td>
+    </tr>
+    <tr>
+        <td class="activeCell" *ngFor='let cell of board.grid | slice:3:6; let i=index' (click)='markCell(cell.id)'
+            [ngClass]="{inactive: !cell.isActive, takenByX: cell.value == 'X', takenByO: cell.value == 'O', oTurn: !xTurn}">
+            {{ cell.value }} </td>
+    </tr>
+    <tr>
+        <td class="activeCell" *ngFor='let cell of board.grid | slice:6:9; let i=index' (click)='markCell(cell.id)'
+            [ngClass]="{inactive: !cell.isActive, takenByX: cell.value == 'X', takenByO: cell.value == 'O', oTurn: !xTurn}">
+            {{ cell.value }} </td>
+    </tr>
+</table>
+
+<table class="xWinner" *ngIf="board.isThereAWinner && board.winner == 'X' ">
+    <h1> &nbsp;&nbsp; {{ board.winner }} &nbsp;&nbsp; </h1>
+</table>
+
+<table class="oWinner" *ngIf="board.isThereAWinner && board.winner == 'O' ">
+    <h1> &nbsp;&nbsp; {{ board.winner }} &nbsp;&nbsp; </h1>
+</table>

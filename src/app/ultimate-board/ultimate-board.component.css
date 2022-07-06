@@ -1,0 +1,53 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td {
+    padding: 1.5rem;
+}
+
+table {
+    align-content: center;
+    margin: 5px auto;
+    table-layout: fixed;
+    column-width: 500px;
+}
+
+.ultBoard {
+    border-collapse: collapse;
+    background-color: aliceblue;
+    table-layout: fixed;
+    column-width: 500px;
+}
+
+/* remove borders from top and bottom rows: */
+tr:first-child td {
+    border-top: none
+}
+
+tr:last-child td {
+    border-bottom: none
+}
+
+/* remove borders from first and last columns: */
+td:first-child {
+    border-left: none
+}
+
+td:last-child {
+    border-right: none
+}
+
+.ultBoardTd {
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+    font-family: 'Brush Script MT', cursive;
+}
