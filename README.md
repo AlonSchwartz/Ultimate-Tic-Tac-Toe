@@ -10,4 +10,8 @@ If a move is played so that it is to win a local board by the rules of normal ti
 
 Once a local board is won by a player or it is filled completely, no more moves may be played in that board. If a player is sent to such a board, then that player may play in any other board.
 
-For more information about Ultimate Tic-Tac-Toe, you can read the wikipedia page: https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe
+For more information about Ultimate Tic-Tac-Toe, you can read the wikipedia page:<br> https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe
+
+
+<img src ="https://github.com/AlonSchwartz/Ultimate-Tic-Tac-Toe/blob/master/ultimate-tic-tac-toe-sceenshot.jpg" width="500" height="475" />
+
